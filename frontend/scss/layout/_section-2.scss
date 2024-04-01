@@ -11,12 +11,6 @@
         position: relative;
         width: 100%;
         text-align: center;
-        h2{
-            font-weight: 500;
-            font-size: em(36);
-            text-align: center;
-            color: #1f1c4e;
-        }
     }
     &__subtext{
         position: relative;
@@ -28,7 +22,6 @@
             font-size: em(14);
             line-height: 1.43;
             text-align: center;
-            color: #1f1c4e;
         }
     }
     &__accordion{
@@ -84,7 +77,6 @@
             font-weight: 500;
             font-size: em(16);
             line-height: 1.25;
-            color: #1f1c4e;
         }
     }
     &__item_text{
@@ -98,7 +90,6 @@
             font-weight: 400;
             font-size: em(14);
             line-height: 1.29;
-            color: #1f1c4e;
         }
     }
     &__item_plus{
@@ -109,14 +100,14 @@
         height: em(22);
         border-radius: 50%;
         background: transparent;
-        border: em(1) solid #5DBDFB;
+        border: em(1) solid $main-blue;
         display: flex;
         align-items: center;
         justify-content: center;
         span{
             width: em(11);
             height: em(1);
-            background: #5DBDFB;
+            background: $main-blue;
             position: absolute;
             left: 50%;
             top: 50%;

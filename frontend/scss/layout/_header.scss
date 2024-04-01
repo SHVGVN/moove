@@ -93,7 +93,9 @@
             &:hover{
                 .wrap-list{
                     opacity: 1;  
-                    transition: .3s ease-in-out; 
+                    transition: .3s ease-in-out;
+                    pointer-events: all;
+                    user-select: all; 
                 }
             }
             &:after{
@@ -127,6 +129,8 @@
                 padding-top: em(8);
                 padding-bottom: em(8);
                 transition: .3s ease-in-out;
+                pointer-events: none;
+                user-select: none; 
                 li{
                     position: relative;
                     width: 100%;

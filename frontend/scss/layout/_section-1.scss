@@ -41,13 +41,6 @@
         position: relative;
         width: 100%;
         margin-top: em(8);
-        h1{
-            font-weight: 500;
-            font-size: em(38);
-            line-height: 1;
-            letter-spacing: em(-0.1,38);
-            color: #1f1c4e;
-        }
     }
     &__subtext{
         position: relative;
@@ -57,111 +50,119 @@
             font-weight: 400;
             font-size: em(18);
             line-height: 1.56;
-            color: #1f1c4e;
         }
     }
     &__btn{
         position: relative;
-        border-radius: em(4);
-        padding: em(16) em(25);
-        background: #5DBDFB;
-        display: block;
-        min-width: em(288);
-        margin-top: em(40);
+        border-radius: em(4,15);
+        padding: em(16,15) em(25,15);
+        background: $main-blue;
+        min-width: em(288,15);
+        margin-top: em(40,15);
         transition: .3s ease-in-out;
+        outline: none;
+        border: none;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1;
+        font-size: em(15);
+        letter-spacing: em(0.2,15);
+        color: #fff;
+        padding-inline:0;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
         span{
-            font-weight: 500;
-            font-size: em(15);
-            text-align: center;
-            letter-spacing: em(0.2,15);
-            color: #fff;
-        }
-        .move-item{
-            position: absolute;
-            height: em(6);
-            background: #1f1c4e;
-            border-radius: em(20);
-            opacity: 1;
-            z-index: -1;
-            transition: .3s ease-in-out;
-            opacity: 0;
-            &--1{
-                width: em(100);
-                right: em(-70);
-                top: em(0);
-                transform: translateX(em(-200));
-                transition-delay: .2s;
-            }
-            &--2{
-                width: em(40);
-                right: em(-120);
-                top: em(0);
-                transform: translateX(em(-200));
-                transition-delay: .4s;
-            }
-            &--3{
-                width: em(60);
-                right: em(-30);
-                top: em(20);
-                transform: translateX(em(-200));
-                transition-delay: .1s;
-            }
-            &--4{
-                width: em(50);
-                right: em(-90);
-                top: em(20);
-                transform: translateX(em(-200));
-                transition-delay: .3s;
-            }
-            &--5{
-                width: em(80);
-                right: em(-60);
-                top: em(42);
-                transform: translateX(em(-200));
-                transition-delay: .2s;
-            }
-            &--6{
-                width: em(20);
-                right: em(-95);
-                top: em(42);
-                transform: translateX(em(-200));
-                transition-delay: .4s;
-            }
-        }
-        &:hover{
-            background: #1f1c4e;
-            transition: .3s ease-in-out;
-            .move-item{
+            &.move-item{
+                position: absolute;
+                height: em(6,15);
+                background: #1f1c4e;
+                border-radius: em(20,15);
                 opacity: 1;
+                z-index: -1;
+                transition: .3s ease-in-out;
+                opacity: 0;
                 &--1{
-                    transform: translateX(0);
-                    transition: .3s ease-in-out;
+                    width: em(100,15);
+                    right: em(-70,15);
+                    top: em(0,15);
+                    transform: translateX(em(-200,15));
                     transition-delay: .2s;
                 }
                 &--2{
-                    transform: translateX(0);
-                    transition: .3s ease-in-out;
+                    width: em(40,15);
+                    right: em(-120,15);
+                    top: em(0,15);
+                    transform: translateX(em(-200,15));
                     transition-delay: .4s;
                 }
                 &--3{
-                    transform: translateX(0);
-                    transition: .3s ease-in-out;
+                    width: em(60,15);
+                    right: em(-30,15);
+                    top: em(20,15);
+                    transform: translateX(em(-200,15));
                     transition-delay: .1s;
                 }
                 &--4{
-                    transform: translateX(0);
-                    transition: .3s ease-in-out;
+                    width: em(50,15);
+                    right: em(-90,15);
+                    top: em(20,15);
+                    transform: translateX(em(-200,15));
                     transition-delay: .3s;
                 }
                 &--5{
-                    transform: translateX(0);
-                    transition: .3s ease-in-out;
+                    width: em(80,15);
+                    right: em(-60,15);
+                    top: em(41,15);
+                    transform: translateX(em(-200,15));
                     transition-delay: .2s;
                 }
                 &--6{
-                    transform: translateX(0);
-                    transition: .3s ease-in-out;
+                    width: em(20,15);
+                    right: em(-95,15);
+                    top: em(41,15);
+                    transform: translateX(em(-200,15));
                     transition-delay: .4s;
+                }
+            }
+        }
+        
+        &:hover{
+            background: #1f1c4e;
+            transition: .3s ease-in-out;
+            span{
+                &.move-item{
+                    opacity: 1;
+                    &--1{
+                        transform: translateX(0);
+                        transition: .3s ease-in-out;
+                        transition-delay: .2s;
+                    }
+                    &--2{
+                        transform: translateX(0);
+                        transition: .3s ease-in-out;
+                        transition-delay: .4s;
+                    }
+                    &--3{
+                        transform: translateX(0);
+                        transition: .3s ease-in-out;
+                        transition-delay: .1s;
+                    }
+                    &--4{
+                        transform: translateX(0);
+                        transition: .3s ease-in-out;
+                        transition-delay: .3s;
+                    }
+                    &--5{
+                        transform: translateX(0);
+                        transition: .3s ease-in-out;
+                        transition-delay: .2s;
+                    }
+                    &--6{
+                        transform: translateX(0);
+                        transition: .3s ease-in-out;
+                        transition-delay: .4s;
+                    }
                 }
             }
         }
